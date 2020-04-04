@@ -1,0 +1,76 @@
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.container{
+    display: flex;
+    padding: 30px;
+
+}
+
+.article{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 1rem solid;
+    display: none;
+
+}
+.article:hover{
+    transform: scale(1.3);
+    transition: all 0.5s ease-in-out;
+
+}
+/*POP UP*/
+.header-newsletter {
+    font-style: italic;
+    color: grey;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.popup-newsletter {
+    position: fixed;
+    width: 60%;
+    background-color: lightgreen;
+    /*ceci permet de centrer popup*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*ceci permet de centrer popup*/
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    display: none;
+}
+
+.popup-newsletter-show {
+    /*le !important permet de prévaloir le popup par rapport au reste*/
+    display: flex !important;
+}
+
+.popup-newsletter-label {
+    margin-bottom: 30px;
+}
+
+.popup-newsletter-input {
+    margin-bottom: 30px;
+}
+.icon-dribbble{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    animation: spin 15s ease infinite;
+    cursor: pointer;
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
